@@ -1,0 +1,146 @@
+/* =============================
+   PALETA & TIPOGRAFÍA
+============================= */
+:root {
+    --primary: #8B0000;      /* Borgoña elegante */
+    --accent: #e7a321;       /* Dorado / ámbar */
+    --text: #2c2c2c;
+    --soft-bg: #faf7f5;
+    --card-bg: #FCC6BB;
+    --border-light: #e7d9d0;
+    --font-title: "Georgia", serif;
+    --font-body: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* =============================
+   GENERAL
+============================= */
+body {
+    background: var(--soft-bg);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 30px;
+}
+
+.menu-wrapper {
+    max-width: 900px;
+    margin: auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* =============================
+   ENCABEZADO
+============================= */
+.menu-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.restaurant-name {
+    font-family: var(--font-title);
+    font-size: 3.2em;
+    color: var(--primary);
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 120px;
+    height: 4px;
+    background: var(--accent);
+    margin: 10px auto 5px;
+    border-radius: 10px;
+}
+
+.menu-title {
+    font-size: 1.3em;
+    letter-spacing: 10px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+/* =============================
+   SECCIONES
+============================= */
+.section {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* =============================
+   ITEMS
+============================= */
+.item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.item-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.item-price {
+    float: right;
+    font-size: 1.4em;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.item-desc {
+    margin-top: 5px;
+    color: #262525;
+    font-size: 0.97em;
+}
+
+/* =============================
+   COMBOS
+============================= */
+.combo-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.combo-list li {
+    margin-bottom: 4px;
+    list-style: "🔥 ";
+    color: #444;
+}
+
+/* =============================
+   EXTRAS
+============================= */
+.extras .extra {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--border-light);
+    padding: 6px 0;
+    font-size: 1.05em;
+}
+
+/* =============================
+   RESPONSIVO
+============================= */
+@media (max-width: 600px) {
+    .item-price {
+        float: none;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .restaurant-name {
+        font-size: 2.2em;
+    }
+}
